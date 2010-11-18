@@ -1,8 +1,8 @@
-import math
 import uuid
 import os
 import time
 import operator
+
 
 class GFSClient:
     def __init__(self, master):
@@ -56,6 +56,7 @@ class GFSClient:
 
     def delete(self, filename):
         self.master.delete(filename)
+
 
 class GFSMaster:
     def __init__(self):
@@ -126,6 +127,7 @@ class GFSMaster:
             chunk = self.chunkservers[chunkloc].read(chunkuuid)
             print chunkloc, chunkuuid, chunk
 
+
 class GFSChunkserver:
     def __init__(self, chunkloc):
         self.chunkloc = chunkloc
@@ -151,6 +153,7 @@ class GFSChunkserver:
         local_filename = self.local_filesystem_root + "/" \
             + str(chunkuuid) + '.gfs'
         return local_filename
+
 
 def main():
     # test script for filesystem

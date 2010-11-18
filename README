@@ -1,2 +1,4 @@
-This is a gitified version of GFS Python implementation from:
-    http://clouddbs.blogspot.com/2010/11/gfs-google-file-system-in-199-lines-of.html
+A GFS Python implementation
+---------------------------
+
+gitified from http://clouddbs.blogspot.com/2010/11/gfs-google-file-system-in-199-lines-of.html
